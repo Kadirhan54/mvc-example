@@ -16,7 +16,7 @@ namespace Productify.Domain.Entities
         {
             Id = Guid.NewGuid();
             Name = name;
-            CreatedOn = DateTime.Now;
+            CreatedOn = DateTime.UtcNow;
         }
     }
 }

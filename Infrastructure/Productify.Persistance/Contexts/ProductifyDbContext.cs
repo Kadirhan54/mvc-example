@@ -14,7 +14,7 @@ namespace Productify.Persistance.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseInMemoryDatabase("ProductifyDb");
+            optionsBuilder.UseNpgsql("your-connection-string");
         }
     }
 }
